@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* Types Of Combinator Selectors! */
+        #heading{
+            margin: 20px;
+            padding: 20px;
+            color: red;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+       
+
+        .hero{
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 10px 8px 9px red;
+        }
+
+        div p{
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 10px 8px 9px red;
+           
+        }
+         div ~p{
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 10px 8px 9px red;
+           
+        }
+
+
+        h1::first-letter{
+            font-size: 50px;
+            background-color: red;
+            color: white ;
+
+        }
+
+        h1::first-line{
+            color: darkgreen;
+            font-family: sans-serif;
+        }
+
+        div::before{
+            content: "Hello";
+            background-color: blue;
+            color: red;
+        }
+
+        div::after{
+            content: "tag❤️";
+            background-color: aquamarine;
+            color: blue;
+        }
+
+        div p::selection{
+            color: yellow;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1 id="heading" class="hero">Welcome to My E-commerce App!</h1>
+    <p class="hero">This is a paragraph!</p>
+
+    <p class="hero">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, blanditiis natus culpa nostrum aspernatur ducimus expedita incidunt saepe nemo ad eum consequuntur labore inventore quia, quod fugiat ut. Repellendus, iusto molestiae blanditiis in ex animi neque iure itaque qui, veniam et voluptatibus, quae aliquam ullam natus ut odit possimus doloribus explicabo necessitatibus maxime quibusdam distinctio rerum sapiente. Cupiditate voluptate quisquam animi nemo est architecto quo voluptatum molestias libero! Ipsam similique molestias ullam, obcaecati placeat mollitia eveniet hic quidem modi, nostrum eligendi saepe id incidunt blanditiis suscipit in, nemo quos! At sed deserunt tenetur, obcaecati architecto eaque perferendis eligendi ullam ad?
+    </p>
+
+    <div> this is a Div</div>
+        <div>
+            
+            <p>this is a para 1</p>
+            <p>this is a para 2</p>
+            <a href="">This is an anchor tag!</a>
+            <p>this is a para 3</p>
+        </div>
+        <p>This is a para 4</p>
+        <p>this is a para 5</p>
+
+
+  
+</body>
+</html>
